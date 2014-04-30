@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- main.xml -->
+<!-- Welcome App's XML layout. -->
+
+<!-- RelativeLayout that contains the App's GUI components. -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent" 
+	android:layout_height="match_parent" 
+	android:id="@+id/welcomeRelativeLayout" android:background="#ffff">
+   
+   <!-- TextView that displays "Welcome to Android App Development!" -->
+
+   <ImageView
+       android:id="@+id/droidImageView"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="16dp"
+       android:src="@drawable/android" />
+
+   <TextView
+       android:id="@+id/welcomeTextView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignRight="@+id/bugImageView"
+       android:layout_below="@+id/droidImageView"
+       android:layout_marginTop="24dp"
+       android:gravity="center"
+       android:text="@string/welcome"
+       android:textColor="#00F"
+       android:textSize="30sp"
+       android:textStyle="bold" />
+
+   <ImageView
+       android:id="@+id/bugImageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/welcomeTextView"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="14dp"
+       android:src="@drawable/bug" />
+
+    <ImageView
+        android:id="@+id/droidImageView1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/bugImageView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:src="@drawable/icon" />
+
+</RelativeLayout>
+
+
+<!--  
+Namespaces are used for providing uniquely named elements and attributes.  
+
+id - used to find specific views in the Java code.
+background="#f7b82b" - yellow color
+match_parent -  The view wants to be as big as its parent (minus padding)                  
+wrap_content   -   The view wants to be just big enough to enclose its content (plus padding)
+android:text="@string/welcome     - the string value of the text is found in strings.xml.
+layout_centerHorizontal -  If true, centers this child horizontally within its parent. 
+layout_centerVertical -    If true, centers this child vertically within its parent.
+android:src="@drawable/android"    - source of the image is drawable/android in the folder /res.
+android:layout_below - Positions the top edge of this view below the given anchor view ID.
+gravity -  for placing an object within a potentially larger container.
+android:gravity="center"  - Place the object in the center of its container in both 
+                            the vertical and horizontal axis, not changing its size.
+
+
+
+Measurement units:
+px                    pixel
+dp or dip   - density-independent pixel
+sp   - scale independent pixel
+in - inches
+mm - millimeters
+
+LinearLayout - arranges components horizontally in one row or horizontally in one column.
+RelativeLayout - arranges components relative to one another or relative to their parent container.
+TableLayout - arranges compnents into a table of rows. TableRow layout can be used to organize columns.
+
+
+Padding can be used to offset the content of the view by a specific amount of pixels. 
+For instance, a left padding of 2 will push the view's content by 2 pixels to the right 
+of the left edge.  
+ - N Pa.
+ 
+
+-->
+
+
+
+
+
+
+
+<!-- 
+**************************************************************************
+* (C) Copyright 1992-2011 by Deitel & Associates, Inc. and               *
+* Pearson Education, Inc. All Rights Reserved.                           *
+                     *
+**************************************************************************
+ -->
